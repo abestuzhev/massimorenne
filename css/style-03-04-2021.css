@@ -1,0 +1,141 @@
+.product-data-box {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 42px;
+    width: 205px;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+
+.product-to-cart.disable {
+    background: #000;
+}
+
+.product-to-cart {
+    background: #34AF62;
+    color: #fff;
+}
+
+.product-to-cart:hover {
+    color: #fff;
+}
+
+.product-to-cart:hover:after {
+    background: url(../img/cart1w.svg) no-repeat 50% 50%;
+    background-size: 100% 100%;
+}
+
+.product-data-error {
+    opacity: 0;
+    transition: opacity .2s ease;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1em;
+    color: #FF0000;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.product-data-error.show-error {
+    opacity: 1;
+    transition: opacity .2s ease;
+}
+
+.product-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.product-to-cart {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+.product-to-cart__text {
+    text-align: center;
+}
+
+.product-to-cart__subtext {
+    font-size: 14px;
+    line-height: 1.3;
+}
+.product-to-cart__text span {
+    display: block;
+}
+
+/*страница с оформлением заказа----------------------------------------------*/
+.basket-checkout-section-inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.basket-checkout-block-total-price-inner {
+    padding: 0;
+}
+
+.basket-checkout-block.basket-checkout-block-btn {
+    position: static;
+    padding: 0;
+}
+
+.basket-checkout-block-total-wrapper {
+    padding: 0 10px;
+    /*display: flex;*/
+    /*flex-flow: row wrap;*/
+    /*justify-content: flex-start;*/
+    /*align-items: stretch;*/
+}
+
+.basket-checkout-block-total-price {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0;
+}
+
+.basket-checkout-block-total-title {
+    width: 110px;
+    text-align: left;
+    line-height: 36px;
+}
+
+.basket-coupon-block-total-price-current {
+    margin-bottom: 0;
+}
+
+.basket-coupon-block-total-price-old {
+    position: absolute;
+    top: -14px;
+}
+
+.basket-coupon-block-total-price-difference {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 0 0 2px 0;
+}
+
+.basket-coupon-block-total-price-difference__text {
+    text-align: left;
+    width: 110px;
+}
+
+
+/*----------------------------------------------*/
+@media screen and (max-width: 480px) {
+    .product-to-cart {
+        margin-right: 0;
+    }
+}
