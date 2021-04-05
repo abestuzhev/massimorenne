@@ -157,13 +157,15 @@ $(document).ready(function () {
     //     }
     // });
 
-    $(document).on("click", ".product-test", function(){
-        $(this).toggleClass("is-active");
-    });
+    // $(document).on("click", ".product-test", function(){
+    //     $(this).toggleClass("is-active");
+    // });
 
     //Смена цены при смене размера (новая версия)
     $(document).on("click", ".product-size", function(){
         $('.product-to-cart').removeClass("disable");
+        $(this).toggleClass("active");
+
         if ($(this).parents(".filter-settings").length > 0){
             $(this).toggleClass("active");
         }else{
@@ -173,8 +175,7 @@ $(document).ready(function () {
             $('.parent-price[data-id="'+$id+'"]').toggleClass('active');
             $('.product-quantity[data-id="'+$id+'"]').toggleClass('active');
             // $(".product-size").removeClass("active");
-
-            $(this).toggleClass("active");
+            
         }
 
         if( $('.product-data .product-size.active').length < 1 ) {
