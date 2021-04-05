@@ -139,3 +139,24 @@
         margin-right: 0;
     }
 }
+
+.product-test  {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 4px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin-right: 4px;
+    border-radius: 42px;
+    background: #f2f2f2;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-test.is-active {
+    background-color: #34AF62;
+    color: #fff;
+}

@@ -157,6 +157,10 @@ $(document).ready(function () {
     //     }
     // });
 
+    $(document).on("click", ".product-test", function(){
+        $(this).toggleClass("is-active");
+    });
+
     //Смена цены при смене размера (новая версия)
     $(document).on("click", ".product-size", function(){
         $('.product-to-cart').removeClass("disable");
