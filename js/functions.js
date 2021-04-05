@@ -17,7 +17,7 @@ $(function () {
         $('header').toggleClass("active");
     });
 
-    // $(".product-size").parent().css({"white-space": "nowrap"});
+    $(".product-size").parent().css({"white-space": "nowrap"});
 
     $(".api_link.api_auth_restore_url").on("click", function () {
         $(".api-auth-restore").show();
