@@ -167,15 +167,14 @@ $(document).ready(function () {
         $(this).toggleClass("active");
 
         if ($(this).parents(".filter-settings").length > 0){
-            $(this).toggleClass("active");
+            // $(this).toggleClass("active");
         }else{
             $('.parent-price').removeClass('active');
             $('.product-quantity').removeClass('active');
             var $id = $(this).data('id');
             $('.parent-price[data-id="'+$id+'"]').toggleClass('active');
             $('.product-quantity[data-id="'+$id+'"]').toggleClass('active');
-            // $(".product-size").removeClass("active");
-            
+            // $(".product-size").removeClass("active");            
         }
 
         if( $('.product-data .product-size.active').length < 1 ) {
